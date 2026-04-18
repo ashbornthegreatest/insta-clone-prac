@@ -44,14 +44,11 @@ body {
   /* min-height: 100%; ensures it takes full height */
 }
 
-.img-logo {
-  margin-top: 20px;
-}
 
 .img-logo {
   display: flex;
   justify-content: center; /* horizontal center */
-  margin-top: 20px;
+  margin-top: 50px;
 }
 
 .bg-image {
