@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Dashboard</title>
+  </head>
+  <body>
+    <h1>Welcome to Pistagram 🚀</h1>
+    <p id="user"></p>
+
+    <script>
+      const params = new URLSearchParams(window.location.search);
+      const token = new URLSearchParams(window.location.search).get("token");
+
+      console.log("TOKEN:", token);
+
+      if (!token) {
+        document.body.innerHTML = "<h1>No token. Go login 😤</h1>";
+      } else {
+        fetch(`https://insta-clone-practice-orpin.vercel.app/verify?token=${token}`)
+          .then(res => res.json())
+          .then(data => {
+            if (data.valid) {
+              document.getElementById("user").innerText =
+                "Logged in as: " + data.email;
+            } else {
+              document.body.innerHTML = "<h1>Invalid token 😤</h1>";
+            }
+          });
+      }
+    </script>
+  </body>
+</html>

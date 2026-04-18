@@ -1,0 +1,189 @@
+body {
+  margin: 0;
+  background: #000000;
+  font-family: Arial, sans-serif;
+
+  display: flex;
+  justify-content: flex-end; /* pushes content right */
+  align-items: center;       /* vertical center */
+  height: 100vh;
+}
+
+.transparent-img{
+    /* mix-blend-mode: multiply; */
+    height: 150px;
+    justify-content: center;
+    align-self: center;
+}
+
+.transparent-img img{
+    /* mix-blend-mode: multiply; */
+    height: 150px;
+    justify-content: center;
+    align-self: top;
+}
+.meta-logo img{
+    /* mix-blend-mode: multiply; */
+    height: 35px;
+    justify-content: center;
+    align-self: top;
+}
+
+.bg-loginbox {
+    background: #111112;
+  padding: 40px;
+  border-radius: 12px; /* optional, looks clean */
+  display: inline-block;
+
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* centers logo horizontally */
+  /* min-height: 100%; ensures it takes full height */
+}
+
+.img-logo {
+  margin-top: 20px;
+}
+
+.img-logo {
+  display: flex;
+  justify-content: center; /* horizontal center */
+  margin-top: 20px;
+}
+
+.bg-image {
+    object-fit: cover;
+  width: 100%;
+  height: auto;
+  max-width: 600px;
+}
+.wrapper {
+    background-color: #111112;
+     height: auto;
+     min-height: 70%;
+     max-width: 550px;
+     /* min-width: 300px; */
+     width: auto;
+     align-items: center;
+}
+
+.login-container {
+  background: #111112;
+  border: 1px solid #65676B;
+  border-radius: 15px;
+  padding: 30px;
+  text-align: center;
+}
+
+#forgot {
+  display: block;        /* makes it behave like a full row */
+  text-align: left;      /* aligns text left */
+  margin-top: 5px;
+  font-size: 12px;
+  color: #ffffff;
+}
+
+.logo {
+  font-size: 40px;
+  margin-bottom: 20px;
+  color : #FFFFFF;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0 ;
+  border: 1px solid #65676B;
+  border-radius: 7px;
+  background: #111112;
+  color: #FFFFFF;
+  margin-right: 5px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: 3px solid #0095f6;
+  background: #111112;
+  color: white;
+  opacity: 0.5;
+  border-radius: 15px;
+}
+
+button:hover {
+  transform: scale(1.02);
+  background: #007cd1;
+  transition: 0.2s;
+}
+button:active {
+  transform: scale(0.95);
+    background: white ;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.divider div {
+  flex: 1;
+  height: 1px;
+  background: #dbdbdb;
+}
+
+.divider span {
+  margin: 0 10px;
+  font-size: 12px;
+  color: #dbdbdb;
+}
+.fb-login{
+    color: #ffffff;
+}
+
+.signup {
+  /* margin-top: 10px;
+  padding: 20px; */
+  /* border: 1px solid #65676B;
+  border-radius: 15px; */
+  background: #111112;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.footer {
+  margin-top: 40px;
+  padding: 20px;
+  text-align: center;
+  color: #8e8e8e;
+  font-size: 12px;
+  align-self: bottom;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.footer-links a {
+  color: #8e8e8e;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
