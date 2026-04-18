@@ -3,7 +3,7 @@ from flask_cors import CORS
 import uuid
 import os
 
-FRONTEND_URL = "https://insta-clone-practice-git-main-ashs-projects-37b94dd5.vercel.app"
+FRONTEND_URL = "https://insta-clone-prac-git-main-ashs-projects-37b94dd5.vercel.app/"
 
 app = Flask(__name__)
 CORS(app, resources={
