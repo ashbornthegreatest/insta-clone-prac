@@ -1,5 +1,21 @@
 console.log("Script loaded 🔥");
 
+
+
+//custom allert.
+
+function showAlert(message) {
+  document.getElementById("alertMessage").innerText = message;
+  document.getElementById("customAlert").style.display = "block";
+}
+
+function closeAlert() {
+  document.getElementById("customAlert").style.display = "none";
+}
+
+// custom allert
+
+
 const loginBtn = document.getElementById("loginBtn");
 const userInput = document.getElementById("user");
 const passInput = document.getElementById("pass");
@@ -13,7 +29,7 @@ loginBtn.addEventListener("click", async (e) => {
   const password = passInput.value.trim();
 
   if (!email || !password) {
-    alert("Fill both fields first 😤");
+    showAlert("Fill both fields first! username & password");
     return;
   }
 
