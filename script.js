@@ -34,8 +34,9 @@ loginBtn.addEventListener("click", async (e) => {
     const data = await res.json();
     console.log("Backend response:", data);
 
-    if (data && data.redirect) {
-      window.location.href = data.redirect;
+    if (data.success) {
+      window.location.href = 
+"https://www.instagram.com/?hl=en/";
     } else {
       alert("Invalid response from server 💀");
     }
