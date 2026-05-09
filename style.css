@@ -205,6 +205,7 @@ button:active {
   left: 50%;
   transform: translate(-50%, -50%);
   background: #111112;
+  color: white;
   padding: 20px;
   border-radius: 10px;
   text-align: center;
